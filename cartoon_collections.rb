@@ -14,9 +14,11 @@ def long_planeteer_calls(planeteer_calls)
   planeteer_calls.any? do |str|
     str.length > 4
     return true
+  end
   planeteer_calls.all? do |str|
     str.length < 4
     return false
+  end
 end
 
 def find_valid_calls(planeteer_calls)
