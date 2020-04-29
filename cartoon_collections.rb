@@ -23,9 +23,7 @@ def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
   planeteer_calls.find do |obj|
     valid_calls.each do |call|
-      if call == obj do
-        return call
-      end
+      obj == call
     end
   end
 end
