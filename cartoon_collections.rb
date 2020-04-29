@@ -21,9 +21,9 @@ end
 
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
-  planeteer_calls.find do |obj|
-    valid_calls.each do |call|
-      obj == call
+  valid_calls.each do |call|
+    planeteer_calls.find do |obj|
+      call == obj
     end
   end
 end
