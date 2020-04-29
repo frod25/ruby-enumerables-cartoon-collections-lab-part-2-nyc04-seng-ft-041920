@@ -12,10 +12,10 @@ end
 
 def long_planeteer_calls(planeteer_calls)
   if planeteer_calls.any? { |str| str.length > 4 }
-    true
+    return true
   else
     planeteer_calls.all? { |str| str.length < 4 }
-    false
+    return false
   end
 end
 
